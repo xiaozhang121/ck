@@ -1,0 +1,83 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages,
+		{"path": "pages/home/index"},
+		{"path": "pages/shop/index"},
+		{"path": "pages/user/index"},
+		{"path": "pages/test/index"},
+		{"path": "pages/questionnaire/basicsInfo"},
+		{"path": "pages/questionnaire/mode"},
+		{"path": "pages/questionnaire/health"},
+		{"path": "pages/circle/index"},
+		{"path": "pages/report/index"},
+		{"path": "pages/report/details"},
+		{
+			"path": "pages/orderForm/index",
+			"style": {
+				"usingComponents": {
+					"van-stepper": "/wxcomponents/vant/stepper/index"
+				}
+			}
+		},
+		{"path": "pages/orderForm/pay"},
+		{"path": "pages/orderForm/payok"}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"usingComponents": {
+			"van-nav-bar": "/wxcomponents/vant/nav-bar/index",
+			"van-skeleton": "/wxcomponents/vant/skeleton/index",
+			"van-field": "/wxcomponents/vant/field/index",
+			"van-button": "/wxcomponents/vant/button/index",
+			"van-search": "/wxcomponents/vant/search/index",
+			"van-icon": "/wxcomponents/vant/icon/index",
+			"van-divider": "/wxcomponents/vant/divider/index",
+			"van-tag": "/wxcomponents/vant/tag/index",
+			"van-sticky": "/wxcomponents/vant/sticky/index",
+			"van-checkbox": "/wxcomponents/vant/checkbox/index",
+			"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+			"van-radio": "/wxcomponents/vant/radio/index",
+			"van-radio-group": "/wxcomponents/vant/radio-group/index",
+			"van-row": "/wxcomponents/vant/row/index",
+			"van-col": "/wxcomponents/vant/col/index",
+			"van-progress": "/wxcomponents/vant/progress/index",
+			"van-dialog": "/wxcomponents/vant/dialog/index",
+			"van-circle": "/wxcomponents/vant/circle/index",
+			"van-tab": "/wxcomponents/vant/tab/index",
+			"van-tabs": "/wxcomponents/vant/tabs/index",
+			"van-transition": "/wxcomponents/vant/transition/index"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#08CFC0",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/imgage/tabBar/home.png",
+				"selectedIconPath": "static/imgage/tabBar/homeHL.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/report/index",
+				"iconPath": "static/imgage/tabBar/report.png",
+				"selectedIconPath": "static/imgage/tabBar/reportHL.png",
+				"text": "报告"
+			},
+			{
+				"pagePath": "pages/shop/index",
+				"iconPath": "static/imgage/tabBar/shop.png",
+				"selectedIconPath": "static/imgage/tabBar/shopHL.png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"iconPath": "static/imgage/tabBar/user.png",
+				"selectedIconPath": "static/imgage/tabBar/userHL.png",
+				"text": "我的"
+			}
+		]
+	}
+}

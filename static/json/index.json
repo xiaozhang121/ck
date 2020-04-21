@@ -1,0 +1,624 @@
+{
+	"base": [
+		{
+			"type": "1",
+			"title": "请问如何称呼您？",
+			"desc": "",
+			"txtType": "string",
+			"value": "",
+			"list": []
+		},
+		{
+			"type": "1",
+			"title": "您的年龄？",
+			"desc": "岁",
+			"txtType": "number",
+			"value": "",
+			"list": [],
+			"bottom": "暂不为18岁以下未成年人提供服务"
+		},
+		{
+			"type": "2",
+			"title": "您的性别？",
+			"desc": "",
+			"value": "",
+			"list": [
+				{"lable":"女", "value":"女"},
+				{"lable":"男", "value":"男"}
+			]
+		},
+		{
+			"type": "1",
+			"title": "您的身高？",
+			"desc": "单位（CM）",
+			"txtType": "number",
+			"value": "",
+			"list": []
+		},
+		{
+			"type": "1",
+			"title": "您的体重？",
+			"desc": "单位（kg）",
+			"txtType": "number",
+			"value": "",
+			"list": []
+		},
+		{
+			"type": "2",
+			"title": "您是否处于以下阶段？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"备孕期", "value":"备孕期"},
+				{"lable":"怀孕期", "value":"怀孕期"},
+				{"lable":"哺乳期", "value":"哺乳期"},
+				{"lable":"以上都不是", "value":"以上都不是"}
+			]
+		}
+	],
+	"health": [
+		{
+			"type": "3",
+			"title": "您希望改善的健康问题",
+			"desc": "每次最多可选3项",
+			"value": "",
+			"mold": "card",
+			"max": "3",
+			"list": [
+				{"lable":"免疫", "value":"免疫", "icon":"icon-zu5"},
+				{"lable":"皮肤抗衰", "value":"皮肤抗衰", "icon":"icon-pifu"},
+				{"lable":"美白", "value":"美白", "icon":"icon-meibai"},
+				{"lable":"睡眠", "value":"睡眠", "icon":"icon-zu2"},
+				{"lable":"卵巢", "value":"卵巢", "icon":"icon-luanchao"},
+				{"lable":"头发", "value":"头发", "icon":"icon-toufa"},
+				{"lable":"指甲", "value":"指甲", "icon":"icon-zhijia"},
+				{"lable":"眼睛", "value":"眼睛", "icon":"icon-yanjing"}
+			],
+			"bottom": "专业提示：我们建议您每个疗程最多只选择3个健康问题。每次越聚焦，效果更佳"
+		},
+		{
+			"type": "2",
+			"title": "平均每天睡眠时长？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "睡眠",
+			"list": [
+				{"lable":"3小时以下", "value":"3小时以下"},
+				{"lable":"3-6小时", "value":"3-6小时"},
+				{"lable":"6-8小时", "value":"6-8小时"},
+				{"lable":"8小时以上", "value":"8小时以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每周熬夜的次数？",
+			"remark": "12点后入睡",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "睡眠",
+			"list": [
+				{"lable":"1-2次", "value":"1-2次"},
+				{"lable":"3-4次", "value":"3-4次"},
+				{"lable":"5次或者以上", "value":"5次或者以上"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "是否有以下睡眠问题？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "睡眠",
+			"list": [
+				{"lable":"入睡困难", "value":"入睡困难"},
+				{"lable":"入睡后常醒", "value":"入睡后常醒"},
+				{"lable":"多梦", "value":"多梦"},
+				{"lable":"睡不沉", "value":"睡不沉"},
+				{"lable":"以上均无", "value":"以上均无"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每年患感冒的次数？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "免疫",
+			"list": [
+				{"lable":"很少", "value":"很少"},
+				{"lable":"2-3次", "value":"2-3次"},
+				{"lable":"4次或以上", "value":"4次或以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "每次感冒需要多久恢复？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "免疫",
+			"list": [
+				{"lable":"3-5天", "value":"3-5天"},
+				{"lable":"一周左右", "value":"一周左右"},
+				{"lable":"1-2周", "value":"1-2周"},
+				{"lable":"超过2周", "value":"超过2周"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "是否有以下皮肤困扰？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "皮肤抗衰,美白",
+			"list": [
+				{"lable":"干燥", "value":"干燥"},
+				{"lable":"有皱纹", "value":"有皱纹"},
+				{"lable":"缺乏弹性", "value":"缺乏弹性"},
+				{"lable":"暗黄、肤色暗沉", "value":"暗黄、肤色暗沉"},
+				{"lable":"有色斑", "value":"有色斑"},
+				{"lable":"痤疮/粉刺", "value":"痤疮/粉刺"},
+				{"lable":"容易出油", "value":"容易出油"},
+				{"lable":"毛孔明显", "value":"毛孔明显"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "是否有皮肤过敏问题？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "皮肤抗衰,美白",
+			"list": [
+				{"lable":"经常", "value":"经常"},
+				{"lable":"偶尔", "value":"偶尔"},
+				{"lable":"几乎没有", "value":"几乎没有"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "使用防晒霜的情况？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "皮肤抗衰,美白",
+			"list": [
+				{"lable":"全年四季", "value":"全年四季"},
+				{"lable":"部分季节", "value":"部分季节"},
+				{"lable":"基本不用", "value":"基本不用"},
+				{"lable":"出门有太阳才用", "value":"出门有太阳才用"},
+				{"lable":"只要出门就用", "value":"只要出门就用"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "此刻的秀发困扰？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "头发",
+			"list": [
+				{"lable":"干枯", "value":"干枯"},
+				{"lable":"细软扁塌", "value":"细软扁塌"},
+				{"lable":"脱发（超出每日脱落50-100根的范围）", "value":"脱发（超出每日脱落50-100根的范围）"},
+				{"lable":"以上均无", "value":"以上均无"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "家族成员有脱发情况吗？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "头发",
+			"list": [
+				{"lable":"有", "value":"有"},
+				{"lable":"无", "value":"无"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "经期是否正常？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "卵巢",
+			"list": [
+				{"lable":"正常", "value":"正常"},
+				{"lable":"总推迟", "value":"总推迟"},
+				{"lable":"总提前", "value":"总提前"},
+				{"lable":"不规律", "value":"不规律"},
+				{"lable":"已绝经", "value":"已绝经"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "每次经前及经期，是否有下述问题？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "卵巢",
+			"list": [
+				{"lable":"下腹疼痛", "value":"下腹疼痛"},
+				{"lable":"恶心", "value":"恶心"},
+				{"lable":"呕吐", "value":"呕吐"},
+				{"lable":"腹泻", "value":"腹泻"},
+				{"lable":"腰酸", "value":"腰酸"},
+				{"lable":"胸部肿胀", "value":"胸部肿胀"},
+				{"lable":"以上均无", "value":"以上均无"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "每天关注电脑、电视或手机等电子屏幕的时长？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "眼睛",
+			"list": [
+				{"lable":"3小时以下", "value":"3小时以下"},
+				{"lable":"3小时以上", "value":"3小时以上"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "眼睛是否经常有以下症状？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "眼睛",
+			"list": [
+				{"lable":"干涩", "value":"干涩"},
+				{"lable":"发红", "value":"发红"},
+				{"lable":"发痒", "value":"发痒"},
+				{"lable":"疲劳", "value":"疲劳"},
+				{"lable":"以上均无", "value":"以上均无"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "指甲是否出现以下症状？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "指甲",
+			"list": [
+				{"lable":"无光泽", "value":"无光泽"},
+				{"lable":"软、易断裂", "value":"软、易断裂"},
+				{"lable":"甲面不光滑（有横或竖纹）", "value":"甲面不光滑（有横或竖纹）"},
+				{"lable":"甲色发灰发白", "value":"甲色发灰发白"},
+				{"lable":"以上均无", "value":"以上均无"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "是否有美甲习惯？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "指甲",
+			"list": [
+				{"lable":"是", "value":"是"},
+				{"lable":"偶尔", "value":"偶尔"},
+				{"lable":"几乎不", "value":"几乎不"}
+			]
+		}
+	],
+	"mode": [
+		{
+			"type": "2",
+			"title": "饮食口味偏好？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"辛辣油腻", "value":"辛辣油腻"},
+				{"lable":"清淡少油", "value":"清淡少油"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每天饮用几杯牛奶或者酸奶？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"几乎不喝", "value":"几乎不喝"},
+				{"lable":"1-2杯", "value":"1-2杯"},
+				{"lable":"3杯及以上", "value":"3杯及以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每周食用几个蛋类？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"几乎不吃", "value":"几乎不吃"},
+				{"lable":"1-3个", "value":"1-3个"},
+				{"lable":"4-7个", "value":"4-5个"},
+				{"lable":"8个或以上", "value":"8个或以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每周食用几次海鱼？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"几乎不吃", "value":"几乎不吃"},
+				{"lable":"1-2次", "value":"1-2次"},
+				{"lable":"3次或以上", "value":"3次或以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每天摄入几份蔬菜？",
+			"remark": "每份大约相当于一个拳头大小",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"几乎不吃", "value":"几乎不吃"},
+				{"lable":"1-2份", "value":"1-2份"},
+				{"lable":"3-4份", "value":"3-4份"},
+				{"lable":"5份以上", "value":"5份以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每日摄入水果量大于200g？",
+			"remark": "200克水果大约相当于一个苹果、一个梨或两根香蕉",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"是", "value":"是"},
+				{"lable":"否", "value":"否"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "平均每周运动几次？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"基本不运动", "value":"基本不运动"},
+				{"lable":"1次", "value":"1次"},
+				{"lable":"2-3次", "value":"2-3次"},
+				{"lable":"4次或更多", "value":"4次或更多"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "每周力量训练的次数是？",
+			"desc": "单选",
+			"value": "",
+			"exercise": "1",
+			"list": [
+				{"lable":"0-1次", "value":"0-1次"},
+				{"lable":"2-3次", "value":"2-3次"},
+				{"lable":"4次或更多", "value":"4次或更多"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "每周有氧训练的次数是？",
+			"desc": "单选",
+			"value": "",
+			"exercise": "1",
+			"list": [
+				{"lable":"0-1次", "value":"0-1次"},
+				{"lable":"2-3次", "value":"2-3次"},
+				{"lable":"4次或更多", "value":"4次或更多"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "每周拉伸类运动的次数是？",
+			"desc": "单选",
+			"value": "",
+			"exercise": "1",
+			"list": [
+				{"lable":"0-1次", "value":"0-1次"},
+				{"lable":"2-3次", "value":"2-3次"},
+				{"lable":"4次或更多", "value":"4次或更多"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "平均日晒情况？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"很少晒太阳", "value":"很少晒太阳"},
+				{"lable":"一般在周末或节假日", "value":"一般在周末或节假日"},
+				{"lable":"每天都有", "value":"每天都有"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "是否采用防晒措施？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"撑伞、墨镜为主", "value":"撑伞、墨镜为主"},
+				{"lable":"防晒霜为主", "value":"防晒霜为主"},
+				{"lable":"以上均有", "value":"以上均有"},
+				{"lable":"没有防晒措施", "value":"没有防晒措施"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "平均喝酒的频率？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"几乎不饮酒", "value":"几乎不饮酒"},
+				{"lable":"每周0-1次", "value":"每周0-1次"},
+				{"lable":"每周2-3次", "value":"每周2-3次"},
+				{"lable":"每周4次及以上", "value":"每周4次及以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每周摄入的酒精总量？",
+			"remark": "注：是酒精摄入量，而不是酒的量",
+			"desc": "单选",
+			"drink": "1",
+			"value": "",
+			"list": [
+				{"lable":"小于105ml ", "value":"小于105ml "},
+				{"lable":"大于105ml", "value":"大于105ml"}
+			],
+			"bottom": "105ml酒精约等于6瓶左右450ml的啤酒(4°), 1.2瓶红酒(12°),  半斤50°白酒"
+		},
+		
+		{
+			"type": "2",
+			"title": "近半年吸烟频率？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"从不吸烟", "value":"从不吸烟"},
+				{"lable":"偶尔一两支", "value":"偶尔一两支"},
+				{"lable":"每周1-2包", "value":"每周1-2包"},
+				{"lable":"每天0.5-1包", "value":"每天0.5-1包"},
+				{"lable":"每天1包以上", "value":"每天1包以上"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "排便的大概频率？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"每周1-2次", "value":"每周1-2次"},
+				{"lable":"隔天一次", "value":"隔天一次"},
+				{"lable":"每天1-2次", "value":"每天1-2次"},
+				{"lable":"每天3次或更多", "value":"每天3次或更多"},
+				{"lable":"不固定", "value":"不固定"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "排便时是否感觉困难？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"是", "value":"是"},
+				{"lable":"否", "value":"否"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "平均每日饮水量？",
+			"desc": "单选",
+			"value": "",
+			"remark": "包括白水和茶",
+			"list": [
+				{"lable":"小于1500ml", "value":"小于1500ml"},
+				{"lable":"大于1500ml", "value":"大于1500ml"}
+			],
+			"bottom": "1500ml水约等于2瓶半~3瓶普通瓶装矿泉水"
+		},
+		{
+			"type": "3",
+			"title": "以下饮料中，平时最多饮用的前三种是？",
+			"desc": "多选",
+			"value": "",
+			"list": [
+				{"lable":"白水", "value":"白水"},
+				{"lable":"咖啡", "value":"咖啡"},
+				{"lable":"茶", "value":"茶"},
+				{"lable":"可乐", "value":"可乐"},
+				{"lable":"其他碳酸饮料", "value":"其他碳酸饮料"},
+				{"lable":"果汁", "value":"果汁"},
+				{"lable":"运动饮料", "value":"运动饮料"},
+				{"lable":"其他含糖饮料", "value":"其他含糖饮料"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "每日连续伏案工作/学习/娱乐的时长？",
+			"desc": "单选",
+			"value": "",
+			"list": [
+				{"lable":"3个小时以下", "value":"3个小时以下"},
+				{"lable":"3个小时以上", "value":"3个小时以上"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "平均每年患感冒的次数？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "免疫",
+			"list": [
+				{"lable":"很少", "value":"很少"},
+				{"lable":"2-3次", "value":"2-3次"},
+				{"lable":"4次或以上", "value":"4次或以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "每次感冒需要多久恢复？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "免疫",
+			"list": [
+				{"lable":"3-5天", "value":"3-5天"},
+				{"lable":"一周左右", "value":"一周左右"},
+				{"lable":"1-2周", "value":"1-2周"},
+				{"lable":"超过2周", "value":"超过2周"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "经期是否正常？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "卵巢",
+			"list": [
+				{"lable":"正常", "value":"正常"},
+				{"lable":"总推迟", "value":"总推迟"},
+				{"lable":"总提前", "value":"总提前"},
+				{"lable":"不规律", "value":"不规律"},
+				{"lable":"已绝经", "value":"已绝经"}
+			]
+		},
+		{
+			"type": "3",
+			"title": "每次经前及经期，是否有下述问题？",
+			"desc": "多选",
+			"value": "",
+			"affiliation": "卵巢",
+			"list": [
+				{"lable":"下腹疼痛", "value":"下腹疼痛"},
+				{"lable":"恶心", "value":"恶心"},
+				{"lable":"呕吐", "value":"呕吐"},
+				{"lable":"腹泻", "value":"腹泻"},
+				{"lable":"腰酸", "value":"腰酸"},
+				{"lable":"胸部肿胀", "value":"胸部肿胀"},
+				{"lable":"以上均无", "value":"以上均无"}
+			]
+		},
+		
+		{
+			"type": "2",
+			"title": "平均每天睡眠时长？",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "睡眠",
+			"list": [
+				{"lable":"3小时以下", "value":"3小时以下"},
+				{"lable":"3-6小时", "value":"3-6小时"},
+				{"lable":"6-8小时", "value":"6-8小时"},
+				{"lable":"8小时以上", "value":"8小时以上"}
+			]
+		},
+		{
+			"type": "2",
+			"title": "平均每周熬夜的次数？",
+			"remark": "12点后入睡",
+			"desc": "单选",
+			"value": "",
+			"affiliation": "睡眠",
+			"list": [
+				{"lable":"1-2次", "value":"1-2次"},
+				{"lable":"3-4次", "value":"3-4次"},
+				{"lable":"5次或者以上", "value":"5次或者以上"}
+			]
+		}
+	]
+}
